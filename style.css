@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -8,6 +8,18 @@
 body{
     background: blue;
 }
+
+.header{
+    background-image:linear-gradient(rgba(200,0,200,0.5),rgba(100,0,200,0.9)),url(./image/bg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: 100%;
+    background-repeat: no-repeat;
+}
+
+
+
 
 .cointainer{
     display: grid;
@@ -41,7 +53,7 @@ body{
 }
 
 #pricecharge{
-    color: red;
+    color: greenyellow;
    position: absolute;
    right: 0;
    font-weight: bold;
@@ -84,7 +96,51 @@ body{
     color: #fff;
 }
 
+.header-text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    top: 35%;
+}
 
+.header-text h2{
+    font-family:  "Sofia", sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+.header-text input{
+    width: 650px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+}
+.header-text input:focus{
+    border: 2px solid blue;
+}
+#input{
+position: relative;
+}
+#submitBtn{
+    position: absolute;
+    top: 25%;
+    right: 2%;
+    border: none;
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background:  blue;
+    color: #fff;
+    transition: background 1s ease-in;
+}
+#submitBtn:hover{
+    background:  rgb(78, 78, 216);
+}
 @media (max-width:600px){
     .cointainer{
         display: grid;
@@ -111,7 +167,7 @@ body{
     }
 
     #pricecharge{
-        color: red;
+        color: greenyellow;
        position: absolute;
        right: 0;
        font-weight: bold;
@@ -126,7 +182,21 @@ body{
         color: rgb(217, 255, 0);
     }
 
-
+    .header-text h2{
+        font-family:  "Sofia", sans-serif;
+        font-weight: 900;
+        font-size: 1.5rem;
+        margin: 20px;
+    }
+    .header-text input{
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        
+    }
 
 
  }
