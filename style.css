@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: blue;
+}
+
+.cointainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 50px;
+    
+}
+.allcoions{
+    display: flex;
+    font-family: "poppins";
+    font-style: italic;
+    font-size: 0.8rem;
+    box-shadow: 5px 5px 5px 5px rgb(12, 12, 197);
+   padding: 20px;
+   margin: 10px;
+   border-radius: 10px;
+   width: 400px;
+   position: relative;
+}
+.update{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 10px;
+    color: #fff;
+    position: relative;
+}
+.update img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#pricecharge{
+    color: red;
+   position: absolute;
+   right: 0;
+   font-weight: bold;
+   font-size: 1.8rem;
+   left: 75%;
+}
+.coin-name{
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+}
+
+.img-coin{
+    display: flex;
+    position: relative;
+}
+
+.img-coin p{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    font-size: 2rem;
+}
+#pricecoin{
+    margin-top: 30px;
+}
+
+#marketcap{
+ 
+    position: absolute;
+    right: 0;
+    left: 50%;
+    bottom: 0;
+}
+
+#btc{
+    margin: 0px 0px 0px 30px;
+}
+#pl{
+    color: #fff;
+}
+
+
+@media (max-width:600px){
+    .cointainer{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 50px;
+        
+    }
+    .cointainer{
+        margin: auto;
+        width: 100%;
+    }
+
+    .allcoions{
+        display: flex;
+        font-family: "poppins";
+        font-style: italic;
+        font-size: 0.8rem;
+        box-shadow: 5px 5px 5px 5px rgb(12, 12, 197);
+       padding: 20px;
+       margin: 10px;
+       border-radius: 10px;
+       width: 90%;
+       position: relative;
+    }
+
+    #pricecharge{
+        color: red;
+       position: absolute;
+       right: 0;
+       font-weight: bold;
+       font-size: 1.2rem;
+       left: 80%;
+    }
+
+    #marketcap{
+ left: 40%;
+        position: absolute;
+        bottom: 0;
+        color: rgb(217, 255, 0);
+    }
+
+
+
+
+ }
